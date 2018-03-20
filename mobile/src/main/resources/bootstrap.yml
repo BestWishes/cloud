@@ -1,13 +1,12 @@
 spring:
   application:
-    name: zuul
+    name: mobile
   cloud:
     config:
-      discovery:
-        service-id: config-server
-        enabled: true
-      fail-fast: true
       label: master
+      discovery:
+        enabled: true
+        service-id: config-server
       profile: dev
 eureka:
   client:
@@ -16,6 +15,5 @@ eureka:
 feign:
   hystrix:
     enabled: true
-ribbon:
-  ConnecttTimeout: 3000
-  ReadTimeout: 60000
+server:
+  port: 10302
