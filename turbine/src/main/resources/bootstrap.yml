@@ -19,3 +19,4 @@ eureka:
       defaultZone: http://127.0.0.1:8761/eureka/
 management:
   port: 10701
+tu
