@@ -17,5 +17,7 @@ feign:
   hystrix:
     enabled: true
 ribbon:
+#请求连接的超时时间,这个时间不够的话会直接抛出异常，而不是获得熔断器的返回结果
   ConnecttTimeout: 3000
+#请求处理的超时时间，这个时间不够的话会直接抛出异常，而不是获得熔断器的返回结果
   ReadTimeout: 60000

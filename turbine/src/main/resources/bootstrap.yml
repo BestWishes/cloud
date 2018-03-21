@@ -1,6 +1,6 @@
 spring:
   application:
-    name: mobile
+    name: turbine-server
   cloud:
     config:
       label: master
@@ -11,12 +11,11 @@ spring:
     stream:
       kafka:
         binder:
-          zk-nodes: 127.0.0.1:2181
+          zkNodes: 127.0.0.1:2181
           brokers: 127.0.0.1:9092
 eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
-feign:
-  hystrix:
-    enabled: true
+management:
+  port: 10701
