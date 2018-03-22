@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: turbine-server
@@ -20,8 +21,10 @@ eureka:
 management:
   port: 10701
 turbine:
-  app-config: hystrixdashboard-server
-  cluster-name-expression: "default"
+  appConfig: hystrixdashboard-server
+  clusterNameExpression: new String("default")
   combine-host-port: true
   aggregator:
-    cluster-config: default
+    clusterConfig: default
+server:
+  port: 10601
