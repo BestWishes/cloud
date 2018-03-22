@@ -8,15 +8,20 @@ spring:
         enabled: true
         service-id: config-server
       profile: dev
-    stream:
-      kafka:
-        binder:
-          zkNodes: 127.0.0.1:2181
-          brokers: 127.0.0.1:9092
+#    stream:
+#      kafka:
+#        binder:
+#          zkNodes: 127.0.0.1:2181
+#          brokers: 127.0.0.1:9092
 eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
 management:
   port: 10701
-tu
+turbine:
+  app-config: hystrixdashboard-server
+  cluster-name-expression: "default"
+  combine-host-port: true
+  aggregator:
+    cluster-config: default
