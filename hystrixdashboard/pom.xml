@@ -15,6 +15,7 @@
             <groupId>com.bestwish</groupId>
             <artifactId>base</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <type>pom</type>
         </dependency>
         <!-- 熔断数据仪表盘-->
         <dependency>

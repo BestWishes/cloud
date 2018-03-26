@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base</artifactId>
     <packaging>pom</packaging>
+    <artifactId>base</artifactId>
     <!-- 公共依赖包-->
     <dependencies>
         <dependency>
