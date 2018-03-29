@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+spring:
+  application:
+    name: zipkin-server
+  cloud:
+    config:
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: dev
+    stream:
+      kafka:
+        binder:
+          zk-nodes: 127.0.0.1:2181
+          brokers: 127.0.0.1:9093
+
