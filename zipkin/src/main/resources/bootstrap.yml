@@ -16,5 +16,5 @@ spring:
       kafka:
         binder:
           zk-nodes: 127.0.0.1:2181
-          brokers: 127.0.0.1:9093
+          brokers: 127.0.0.1:9092
 
